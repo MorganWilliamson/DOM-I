@@ -42,7 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
-// creating the nav
+// nav
 
 let nav = document.querySelector("nav");
 
@@ -69,3 +69,8 @@ navItem5.href = "#";
 const navItem6 = nav.appendChild(document.createElement('a'));
 navItem6.textContent = "Contact";
 navItem6.href = "#";
+
+// cta
+
+let ctaImage = document.getElementById("cta-img");
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"])
