@@ -73,4 +73,13 @@ navItem6.href = "#";
 // cta
 
 let ctaImage = document.getElementById("cta-img");
-ctaImage.setAttribute('src', siteContent["cta"]["img-src"])
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
+
+const ctaHeader = document.querySelector("h1");
+ctaHeader.textContent = "DOM is awesome!";
+
+const ctaButton = document.querySelector("button");
+ctaButton.innerText = "Get Started";
+
+// main content
+
