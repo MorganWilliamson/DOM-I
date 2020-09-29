@@ -119,3 +119,21 @@ mcTitle5.textContent = siteContent['main-content']['vision-h4'];
 const mcPara5 = document.querySelector('div .bottom-content .text-content:nth-of-type(3) p');
 mcPara5.textContent = siteContent['main-content']['vision-content'];
 
+// contact
+const contactTitle = document.querySelector('.contact h4');
+contactTitle.textContent = siteContent['contact']['contact-h4'];
+
+let contactPara1 = document.querySelector('.contact p:nth-of-type(1)');
+contactPara1.textContent = siteContent["contact"]["address"];
+
+let contactPara2 = document.querySelector('.contact p:nth-of-type(2)');
+contactPara2.textContent = siteContent['contact']['phone'];
+
+let contactPara3 = document.querySelector('.contact p:nth-of-type(3)');
+contactPara3.textContent = siteContent['contact']['email'];
+
+// footer
+
+
+
+
