@@ -83,3 +83,17 @@ ctaButton.innerText = "Get Started";
 
 // main content
 
+const mcTitle1 = document.querySelector('div .top-content .text-content:nth-of-type(1) h4');
+mcTitle1.textContent = siteContent['main-content']['features-h4'];
+
+const mcPara1 = document.querySelector('div .top-content .text-content:nth-of-type(1) p');
+mcPara1.textContent = siteContent['main-content']['features-content'];
+
+const mcTitle2 = document.querySelector('div .top-content .text-content:nth-of-type(2) h4');
+mcTitle2.textContent = siteContent['main-content']['about-h4'];
+
+const mcPara2 = document.querySelector('div .top-content .text-content:nth-of-type(2) p');
+mcPara2.textContent = siteContent['main-content']['about-content'];
+
+let mcImage = document.getElementById("middle-img");
+mcImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
