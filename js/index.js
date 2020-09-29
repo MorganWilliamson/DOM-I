@@ -40,3 +40,117 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+// nav
+
+let nav = document.querySelector("nav");
+
+const navItem1 = nav.querySelector('a');
+navItem1.textContent = "Services";
+navItem1.href = "#";
+
+const navItem2 = nav.appendChild(document.createElement('a'));
+navItem2.textContent = "Product";
+navItem2.href = "#";
+
+const navItem3 = nav.appendChild(document.createElement('a'));
+navItem3.textContent = "Vision";
+navItem3.href = "#";
+
+const navItem4 = nav.appendChild(document.createElement('a'));
+navItem4.textContent = "Features";
+navItem4.href = "#";
+
+const navItem5 = nav.appendChild(document.createElement('a'));
+navItem5.textContent = "About";
+navItem5.href = "#";
+
+const navItem6 = nav.appendChild(document.createElement('a'));
+navItem6.textContent = "Contact";
+navItem6.href = "#";
+
+// cta
+
+let ctaImage = document.getElementById("cta-img");
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
+
+const ctaHeader = document.querySelector("h1");
+ctaHeader.textContent = "DOM is awesome!";
+
+const ctaButton = document.querySelector("button");
+ctaButton.innerText = "Get Started";
+
+// main content
+
+/* top content */
+const mcTitle1 = document.querySelector('div .top-content .text-content:nth-of-type(1) h4');
+mcTitle1.textContent = siteContent['main-content']['features-h4'];
+
+const mcPara1 = document.querySelector('div .top-content .text-content:nth-of-type(1) p');
+mcPara1.textContent = siteContent['main-content']['features-content'];
+
+const mcTitle2 = document.querySelector('div .top-content .text-content:nth-of-type(2) h4');
+mcTitle2.textContent = siteContent['main-content']['about-h4'];
+
+const mcPara2 = document.querySelector('div .top-content .text-content:nth-of-type(2) p');
+mcPara2.textContent = siteContent['main-content']['about-content'];
+
+/* middle image */
+let mcImage = document.getElementById("middle-img");
+mcImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+/* bottom content */
+const mcTitle3 = document.querySelector('div .bottom-content .text-content:nth-of-type(1) h4');
+mcTitle3.textContent = siteContent['main-content']['services-h4'];
+
+const mcPara3 = document.querySelector('div .bottom-content .text-content:nth-of-type(1) p');
+mcPara3.textContent = siteContent['main-content']['services-content'];
+
+const mcTitle4 = document.querySelector('div .bottom-content .text-content:nth-of-type(2) h4');
+mcTitle4.textContent = siteContent['main-content']['product-h4'];
+
+const mcPara4 = document.querySelector('div .bottom-content .text-content:nth-of-type(2) p');
+mcPara4.textContent = siteContent['main-content']['product-content'];
+
+const mcTitle5 = document.querySelector('div .bottom-content .text-content:nth-of-type(3) h4');
+mcTitle5.textContent = siteContent['main-content']['vision-h4'];
+
+const mcPara5 = document.querySelector('div .bottom-content .text-content:nth-of-type(3) p');
+mcPara5.textContent = siteContent['main-content']['vision-content'];
+
+// contact
+const contactTitle = document.querySelector('.contact h4');
+contactTitle.textContent = siteContent['contact']['contact-h4'];
+
+const contactPara1 = document.querySelector('.contact p:nth-of-type(1)');
+contactPara1.textContent = siteContent["contact"]["address"];
+
+const contactPara2 = document.querySelector('.contact p:nth-of-type(2)');
+contactPara2.textContent = siteContent['contact']['phone'];
+
+const contactPara3 = document.querySelector('.contact p:nth-of-type(3)');
+contactPara3.textContent = siteContent['contact']['email'];
+
+// footer
+
+const footerInfo = document.querySelector('footer p');
+footerInfo.textContent = siteContent['footer']['copyright'];
+
+// additional nav elements
+
+const navItem7 = nav.appendChild(document.createElement('a'));
+navItem7.textContent = "Login";
+navItem7.href = "#";
+
+const navItem8 = nav.appendChild(document.createElement('a'));
+navItem8.textContent = "Sign Up";
+navItem8.href = "#";
+
+// styling
+
+const links = document.querySelectorAll('.container nav a');
+
+links.forEach(element => {
+  element.style.color = 'green'
+});
