@@ -123,17 +123,34 @@ mcPara5.textContent = siteContent['main-content']['vision-content'];
 const contactTitle = document.querySelector('.contact h4');
 contactTitle.textContent = siteContent['contact']['contact-h4'];
 
-let contactPara1 = document.querySelector('.contact p:nth-of-type(1)');
+const contactPara1 = document.querySelector('.contact p:nth-of-type(1)');
 contactPara1.textContent = siteContent["contact"]["address"];
 
-let contactPara2 = document.querySelector('.contact p:nth-of-type(2)');
+const contactPara2 = document.querySelector('.contact p:nth-of-type(2)');
 contactPara2.textContent = siteContent['contact']['phone'];
 
-let contactPara3 = document.querySelector('.contact p:nth-of-type(3)');
+const contactPara3 = document.querySelector('.contact p:nth-of-type(3)');
 contactPara3.textContent = siteContent['contact']['email'];
 
 // footer
 
+const footerInfo = document.querySelector('footer p');
+footerInfo.textContent = siteContent['footer']['copyright'];
 
+// additional nav elements
 
+const navItem7 = nav.appendChild(document.createElement('a'));
+navItem7.textContent = "Login";
+navItem7.href = "#";
 
+const navItem8 = nav.appendChild(document.createElement('a'));
+navItem8.textContent = "Sign Up";
+navItem8.href = "#";
+
+// styling
+
+const links = document.querySelectorAll('.container nav a');
+
+links.forEach(element => {
+  element.style.color = 'green'
+});
